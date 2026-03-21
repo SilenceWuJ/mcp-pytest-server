@@ -1,0 +1,32 @@
+# 数据库配置
+database:
+  # SQLite配置（默认）
+  sqlite:
+    url: "sqlite:///./test_results.db"
+    echo: false
+  
+  # PostgreSQL配置示例
+  postgresql:
+    url: "postgresql://user:password@localhost/test_db"
+    echo: false
+  
+#  # MySQL配置示例
+#  mysql:
+#    url: "mysql://user:password@localhost/test_db"
+#    echo: false
+
+  mysql:
+    url: "mysql+pymysql://qa_user:123456@localhost:3306/qa_platform"
+    echo: false
+
+# 数据库连接池配置
+pool:
+  pool_size: 5
+  max_overflow: 10
+  pool_timeout: 30
+  pool_recycle: 3600
+
+# 迁移配置
+migration:
+  alembic_ini: "alembic.ini"
+  version_locations: ["alembic/versions"]

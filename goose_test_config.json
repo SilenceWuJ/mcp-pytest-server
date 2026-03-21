@@ -1,0 +1,13 @@
+{
+  "mcp_servers": {
+    "pytest_test_server": {
+      "command": "/usr/local/bin/python",
+      "args": [
+        "simple_server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "/Users/xixi/mcp-pytest-server"
+      }
+    }
+  }
+}

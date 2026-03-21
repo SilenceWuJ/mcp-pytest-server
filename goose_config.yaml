@@ -1,0 +1,30 @@
+# Goose MCP配置
+#mcp_servers:
+#  pytest_test_server:
+#    command: "/Users/xixi/mcp-pytest-server/venv/bin/python3"
+#    args:
+#      - "simple_server.py"
+#    env:
+#      PYTHONPATH: "/Users/xixi/mcp-pytest-server"
+#mcp_servers:
+#  pytest_test_server:
+#    command: "/Users/xixi/mcp-pytest-server/venv/bin/python3"
+#    args: ["-m", "src.main"]
+#    cwd: "/Users/xixi/mcp-pytest-server"
+#    env:
+#      PYTHONPATH: "/Users/xixi/mcp-pytest-server"
+#      DATABASE_URL: "mysql+pymysql://qa_user:123456@localhost:3306/qa_platform"
+#      DEBUG: "false"
+#      HOST: "127.0.0.1"
+#      PORT: "8000"
+mcp_servers:
+  pytest_test_server:
+    command: "/Users/xixi/mcp-pytest-server/venv/bin/python3"
+    args: ["-m", "src.main"]
+    cwd: "/Users/xixi/mcp-pytest-server"
+    env:
+      PYTHONPATH: "/Users/xixi/mcp-pytest-server"
+      DATABASE_URL: "mysql+pymysql://user:password@localhost:3306/qa_platform"
+      DEBUG: "false"
+      HOST: "127.0.0.1"
+      PORT: "8000"
